@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:"Roboto",sans-serif;
+    box-sizing: border-box;
+}
+.hero {
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+
+}
+nav ul li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 20px;
+}
+nav ul li a {
+   color: #efefef;
+}
+
+.menu-img {
+     cursor: pointer;
+     width: 45px;
+     padding-right: 10px;
+
+}
+.logo {
+    width: 120px;
+}
+
+button {
+    background: #efefef;
+    height: 26px;
+    width: 50px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+button span {
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    position: relative;
+}
+.lamp-container {
+    position: absolute;
+    top: -80px;
+    left: 22%;
+    width: 200px;
+}
+.lamp {
+    width: 100%;
+}
+.light {
+    position: absolute;
+    top: 97%;
+    margin-left: -5px;
+    left: 49%;
+    transform: translateX(-50%);
+    width: 700px;
+    opacity: 0;
+    transition:  0.5s;
+
+}
+.text-container {
+    top: 30%;
+    position: absolute;
+    left: 50%;
+}
+.text-container h1 {
+    font-size: 80px;
+    font-weight: 400;
+}
+.text-container h3 {
+    left: 20px;
+    font-family: 'Roboto', Times, serif;
+    position: relative;
+}
+.active {
+    transition: 0.5s;
+    background-color: black;
+    background:black;
+    span {
+        position: relative;
+        background-color: yellow;
+        margin-left: 30px;
+    }
+}
+.on {
+    opacity: 1;
+}
