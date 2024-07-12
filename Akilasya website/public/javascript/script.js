@@ -7,6 +7,8 @@ const cards = document.querySelectorAll(".card")
 const servicesCards = document.querySelectorAll(".services-card")
 const mapSVG = document.getElementsByClassName(".map")
 var paths = document.getElementsByTagName("path")
+
+var showingToolTip = false;
 const observer = new IntersectionObserver((entries)=> {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -95,8 +97,7 @@ servicesCards.forEach((element) => {
 })
 document.querySelectorAll(".path").forEach((element) => {
     element.addEventListener("mouseover", ()=> {
-        setTimeout(() => {
-            
+        setTimeout(() => { 
         }, 100);
            var e = window.event;
            var x = e.clientX
